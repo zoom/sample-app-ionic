@@ -86,7 +86,6 @@ For the versions available, see the [tags on this repository](https://github.com
 
 Please refer to our [CHANGELOG](CHANGELOG.md) for all changes.
 
-
 ## Support
 
 For any issues regarding our SDK, please visit our new Community Support Forum at https://devforum.zoom.us/.
