@@ -90,7 +90,4 @@
     <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
         <string>Need microphone for video conferencing</string>
     </edit-config>
-    <plugin name="cordova.plugin.zoom" spec="../../Zoom" />
-    <engine name="android" spec="7.1.4" />
-    <engine name="ios" spec="4.5.5" />
 </widget>
