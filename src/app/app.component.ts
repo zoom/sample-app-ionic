@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import {Platform, ToastController} from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
 import { TabsPage } from '../pages/tabs/tabs';
-import { Zoom } from '@ionic-native/zoom';
+import { Zoom } from '@ionic-native/zoom/ngx';
 
 @Component({
   templateUrl: 'app.html',

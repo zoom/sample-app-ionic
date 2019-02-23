@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 110:
+/***/ 159:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 110;
+webpackEmptyAsyncContext.id = 159;
 
 /***/ }),
 
-/***/ 151:
+/***/ 204:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -30,18 +30,18 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 151;
+webpackEmptyAsyncContext.id = 204;
 
 /***/ }),
 
-/***/ 194:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__non_login_nonlogin__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__non_login_nonlogin__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,7 +60,7 @@ var TabsPage = /** @class */ (function () {
         this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__login_login__["a" /* LoginUserPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Non-Login User" tabIcon="videocam"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Login User" tabIcon="contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Non-Login User" tabIcon="videocam"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Login User" tabIcon="contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -71,14 +71,14 @@ var TabsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 195:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginUserPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom_ngx__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -263,11 +263,11 @@ var LoginUserPage = /** @class */ (function () {
     };
     LoginUserPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/login/login.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Login User\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Login User can:\n    </ion-card-header>\n    <ion-card-content>\n      <ul>\n        <li>join meeting</li>\n        <li>start a scheduled meeting</li>\n        <li>start instant meeting</li>\n      </ul>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Login\n    </ion-card-header>\n    <ion-card-content padding>\n      <p *ngIf="!loggedIn">Enter your Zoom username and password</p>\n      <ion-list *ngIf="!loggedIn">\n        <ion-item>\n          <ion-label stacked>Username</ion-label>\n          <ion-input type="text" [(ngModel)]="userName"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked>Password</ion-label>\n          <ion-input type="password" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      <button *ngIf="!loggedIn" ion-button full (click)="login()">Login</button>\n      <button *ngIf="loggedIn" ion-button full (click)="logout()">Logout</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card *ngIf="loggedIn">\n    <ion-card-header>\n      Meeting\n    </ion-card-header>\n    <ion-card-content padding>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>MeetingNo</ion-label>\n          <ion-input type="string" [(ngModel)]="meetingNumber"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked>Meeting Password (if any)</ion-label>\n          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>\n        </ion-item>\n      </ion-list>\n      <button ion-button full (click)="joinMeeting()">Join Meeting</button>\n      <button ion-button full (click)="startMeeting()">Start Meeting</button>\n      <div padding>\n        <button ion-button full (click)="startInstantMeeting()" outline>Start Instant Meeting</button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n\n  <!--<button ion-button full (click)="isLoggedIn()">Logged In?</button>-->\n</ion-content>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/login/login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/login/login.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Login User\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Login User can:\n    </ion-card-header>\n    <ion-card-content>\n      <ul>\n        <li>join meeting</li>\n        <li>start a scheduled meeting</li>\n        <li>start instant meeting</li>\n      </ul>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Login\n    </ion-card-header>\n    <ion-card-content padding>\n      <p *ngIf="!loggedIn">Enter your Zoom username and password</p>\n      <ion-list *ngIf="!loggedIn">\n        <ion-item>\n          <ion-label stacked>Username</ion-label>\n          <ion-input type="text" [(ngModel)]="userName"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked>Password</ion-label>\n          <ion-input type="password" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      <button *ngIf="!loggedIn" ion-button full (click)="login()">Login</button>\n      <button *ngIf="loggedIn" ion-button full (click)="logout()">Logout</button>\n    </ion-card-content>\n  </ion-card>\n  <ion-card *ngIf="loggedIn">\n    <ion-card-header>\n      Meeting\n    </ion-card-header>\n    <ion-card-content padding>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>MeetingNo</ion-label>\n          <ion-input type="string" [(ngModel)]="meetingNumber"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked>Meeting Password (if any)</ion-label>\n          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>\n        </ion-item>\n      </ion-list>\n      <button ion-button full (click)="joinMeeting()">Join Meeting</button>\n      <button ion-button full (click)="startMeeting()">Start Meeting</button>\n      <div padding>\n        <button ion-button full (click)="startInstantMeeting()" outline>Start Instant Meeting</button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n\n  <!--<button ion-button full (click)="isLoggedIn()">Logged In?</button>-->\n</ion-content>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/login/login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom__["a" /* Zoom */]])
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom_ngx__["a" /* Zoom */]])
     ], LoginUserPage);
     return LoginUserPage;
 }());
@@ -276,14 +276,14 @@ var LoginUserPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NonLoginUserPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom_ngx__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -402,11 +402,11 @@ var NonLoginUserPage = /** @class */ (function () {
     };
     NonLoginUserPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-nonlogin',template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/non-login/nonlogin.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Non-Login User</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Non-login User can:\n    </ion-card-header>\n    <ion-card-content>\n      <ul>\n        <li>join meeting</li>\n        <li>host a meeting with ZAK</li>\n      </ul>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Join Meeting\n    </ion-card-header>\n    <ion-card-content padding>\n      <p>Enter a Zoom Meeting Number to join a meeting</p>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>MeetingNo</ion-label>\n          <ion-input type="text" [(ngModel)]="meetingNumber"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked="">Meeting Password (if any)</ion-label>\n          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>\n        </ion-item>\n      </ion-list>\n      <div>\n        <button ion-button full icon-start (click)="joinMeeting()">\n          <ion-icon name="videocam"></ion-icon>\n          Join Meeting\n        </button>\n      </div>\n      <div>\n        <button ion-button full (click)="startMeetingWithZAK()">Start Meeting with ZAK</button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Change meeting language\n    </ion-card-header>\n    <ion-card-content padding>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>Languages</ion-label>\n          <ion-select [(ngModel)]="language">\n            <ion-option value="en-US">English</ion-option>\n            <ion-option value="zh-CN">Simplified Chinese</ion-option>\n            <ion-option value="ja-JP">Japanese</ion-option>\n            <ion-option value="de-DE">German</ion-option>\n            <ion-option value="fr-FR">French</ion-option>\n            <ion-option value="zh-TW">Traditional Chinese</ion-option>\n            <ion-option value="es-419">Spanish</ion-option>\n            <ion-option value="ru-RU">Russian</ion-option>\n            <ion-option value="pt-PT">Portuguese</ion-option>\n          </ion-select>\n        </ion-item>\n      </ion-list>\n      <div>\n        <button ion-button full icon-start (click)="setLanguage()">\n          Change Language\n        </button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/pages/non-login/nonlogin.html"*/
+            selector: 'page-nonlogin',template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/non-login/nonlogin.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Non-Login User</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      Non-login User can:\n    </ion-card-header>\n    <ion-card-content>\n      <ul>\n        <li>join meeting</li>\n        <li>host a meeting with ZAK</li>\n      </ul>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Join Meeting\n    </ion-card-header>\n    <ion-card-content padding>\n      <p>Enter a Zoom Meeting Number to join a meeting</p>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>MeetingNo</ion-label>\n          <ion-input type="text" [(ngModel)]="meetingNumber"></ion-input>\n        </ion-item>\n        <ion-item>\n          <ion-label stacked="">Meeting Password (if any)</ion-label>\n          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>\n        </ion-item>\n      </ion-list>\n      <div>\n        <button ion-button full icon-start (click)="joinMeeting()">\n          <ion-icon name="videocam"></ion-icon>\n          Join Meeting\n        </button>\n      </div>\n      <div>\n        <button ion-button full (click)="startMeetingWithZAK()">Start Meeting with ZAK</button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n  <ion-card>\n    <ion-card-header>\n      Change meeting language\n    </ion-card-header>\n    <ion-card-content padding>\n      <ion-list>\n        <ion-item>\n          <ion-label stacked>Languages</ion-label>\n          <ion-select [(ngModel)]="language">\n            <ion-option value="en-US">English</ion-option>\n            <ion-option value="zh-CN">Simplified Chinese</ion-option>\n            <ion-option value="ja-JP">Japanese</ion-option>\n            <ion-option value="de-DE">German</ion-option>\n            <ion-option value="fr-FR">French</ion-option>\n            <ion-option value="zh-TW">Traditional Chinese</ion-option>\n            <ion-option value="es-419">Spanish</ion-option>\n            <ion-option value="ru-RU">Russian</ion-option>\n            <ion-option value="pt-PT">Portuguese</ion-option>\n          </ion-select>\n        </ion-item>\n      </ion-list>\n      <div>\n        <button ion-button full icon-start (click)="setLanguage()">\n          Change Language\n        </button>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/pages/non-login/nonlogin.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom__["a" /* Zoom */]])
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_zoom_ngx__["a" /* Zoom */]])
     ], NonLoginUserPage);
     return NonLoginUserPage;
 }());
@@ -415,13 +415,13 @@ var NonLoginUserPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(346);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -429,21 +429,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 220:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_non_login_nonlogin__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_zoom__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_non_login_nonlogin__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar_ngx__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen_ngx__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_zoom_ngx__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -485,9 +485,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_9__ionic_native_zoom__["a" /* Zoom */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar_ngx__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen_ngx__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_zoom_ngx__["a" /* Zoom */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
@@ -499,17 +499,17 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 263:
+/***/ 383:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_zoom__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar_ngx__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen_ngx__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_zoom_ngx__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -530,8 +530,8 @@ var MyApp = /** @class */ (function () {
         var _this = this;
         this.toastCtrl = toastCtrl;
         this.zoomService = zoomService;
-        this.SDK_KEY = "Your SDK Key here";
-        this.SDK_SECRET = "Your SDK Secret here";
+        this.SDK_KEY = "QjJX5NPYQLOgGhWGV1yX9w";
+        this.SDK_SECRET = "3vLROk7Z8iz6JpARgREtQinL7NtEOSjOYhYC";
         this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
@@ -560,14 +560,14 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/demo/testApp/src/app/app.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/carsonchen/Desktop/ionic/testDemo/sample-app-ionic-master/src/app/app.html"*/,
             providers: []
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar_ngx__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen_ngx__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_native_zoom__["a" /* Zoom */]])
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_zoom_ngx__["a" /* Zoom */]])
     ], MyApp);
     return MyApp;
 }());
@@ -576,5 +576,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[197]);
+},[341]);
 //# sourceMappingURL=main.js.map

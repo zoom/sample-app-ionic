@@ -7,9 +7,9 @@ import { LoginUserPage } from '../pages/login/login';
 import { NonLoginUserPage } from '../pages/non-login/nonlogin';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { Zoom } from '@ionic-native/zoom';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { Zoom } from '@ionic-native/zoom/ngx';
 
 
 @NgModule({
@@ -22,7 +22,6 @@ import { Zoom } from '@ionic-native/zoom';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-
   ],
   bootstrap: [IonicApp],
   entryComponents: [

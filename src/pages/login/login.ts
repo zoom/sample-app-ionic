@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavController, ToastController} from 'ionic-angular';
-import { Zoom } from '@ionic-native/zoom';
+import { Zoom } from '@ionic-native/zoom/ngx';
 
 @Component({
   selector: 'page-login',

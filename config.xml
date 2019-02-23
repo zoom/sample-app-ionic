@@ -83,11 +83,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-android-permissions" spec="1.0.0" />
     <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
         <string>Need camera for video conferencing</string>
     </edit-config>
     <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
         <string>Need microphone for video conferencing</string>
     </edit-config>
+    <plugin name="cordova.plugin.zoom" spec="0.1.1" />
+    <engine name="android" spec="7.1.4" />
 </widget>
