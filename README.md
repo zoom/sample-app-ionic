@@ -2,8 +2,6 @@
 
 **Note: This is a community project initiated by Zoom. Zoom does not actively enhance the interfaces in the Ionic plugin. If you would like to contribute, please contact us. Thanks! :)**
 
-> Since the Ionic team has not updated their latest release to npm, our Zoom plugin is not included in the ionic-native version available on npm. Please download the latest ionic-native from their repo: https://github.com/ionic-team/ionic-native.
-
 > Our brand new [Zoom Developer Community Forum](https://devforum.zoom.us/) is now online!!! Check it out! We are here to help! :D
 
 ## Disclaimer
@@ -52,6 +50,7 @@ In your Ionic application directory:
 1. Install the dependencies and platforms:
 ```
 npm install
+npm install @ionic-native/zoom #(Optional) if not successfully installed automatically with package.json
 ionic cordova platform add android
 ionic cordova platform add ios
 ```
