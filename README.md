@@ -101,7 +101,7 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Change log
 
-Please refer to our [CHANGELOG](CHANGELOG.md) for all changes.
+Please refer to our [CHANGELOG](https://marketplace.zoom.us/docs/sdk/hybrid-frameworks/ionic/resource/release-notes) for all changes.
 
 ## Support
 
