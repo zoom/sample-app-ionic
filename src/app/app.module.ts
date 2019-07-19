@@ -1,40 +1,25 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { RouteReuseStrategy } from '@angular/router';
 
-import { LoginUserPage } from '../pages/login/login';
-import { NonLoginUserPage } from '../pages/non-login/nonlogin';
-import { TabsPage } from '../pages/tabs/tabs';
-
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { Zoom } from '@ionic-native/zoom/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import {Zoom} from '@ionic-native/zoom/ngx';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    LoginUserPage,
-    NonLoginUserPage,
-    TabsPage
-  ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp),
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    LoginUserPage,
-    NonLoginUserPage,
-    TabsPage
-  ],
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
     Zoom,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

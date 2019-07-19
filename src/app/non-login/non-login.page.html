@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-tab-bar>
+    <ion-title>Non-Login User</ion-title>
+  </ion-tab-bar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header color="primary">
+      Non-login User can:
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>join a meeting</li>
+        <li>host a meeting with ZAK</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header color="primary">
+      Join a Meeting
+    </ion-card-header>
+    <ion-card-content padding>
+      <p>Enter a Zoom Meeting Number to join a meeting</p>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">MeetingNo</ion-label>
+          <ion-input type="text" [(ngModel)]="meetingNumber"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Meeting Password (if any)</ion-label>
+          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>
+        </ion-item>
+      </ion-list>
+      <div>
+        <ion-button expand="full" (click)="joinMeeting()">
+          <ion-icon slot="start" name="videocam"></ion-icon>
+          Join a Meeting
+        </ion-button>
+      </div>
+      <div>
+        <ion-button expand="full" (click)="startMeetingWithZAK()">Start a Meeting with ZAK</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header color="primary">
+      Change the meeting language
+    </ion-card-header>
+    <ion-card-content padding>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Languages</ion-label>
+          <ion-select [(ngModel)]="language">
+            <ion-select-option value="en-US">English</ion-select-option>
+            <ion-select-option value="zh-CN">Simplified Chinese</ion-select-option>
+            <ion-select-option value="ja-JP">Japanese</ion-select-option>
+            <ion-select-option value="de-DE">German</ion-select-option>
+            <ion-select-option value="fr-FR">French</ion-select-option>
+            <ion-select-option value="zh-TW">Traditional Chinese</ion-select-option>
+            <ion-select-option value="es-419">Spanish</ion-select-option>
+            <ion-select-option value="ru-RU">Russian</ion-select-option>
+            <ion-select-option value="pt-PT">Portuguese</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <div>
+        <ion-button expand="full" (click)="setLanguage()">
+          Change the Language
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

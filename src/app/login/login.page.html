@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login User
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header color="primary">
+      Login User can:
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>join a meeting</li>
+        <li>start a scheduled meeting</li>
+        <li>start an instant meeting</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header color="primary">
+      Login
+    </ion-card-header>
+    <ion-card-content padding>
+      <p *ngIf="!loggedIn">Enter your Zoom username and password</p>
+      <ion-list *ngIf="!loggedIn">
+        <ion-item>
+          <ion-label position="stacked">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="userName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button *ngIf="!loggedIn" expand="full" (click)="login()">Login</ion-button>
+      <ion-button *ngIf="loggedIn" expand="full" (click)="logout()">Logout</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="loggedIn">
+    <ion-card-header>
+      Meeting
+    </ion-card-header>
+    <ion-card-content padding>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Meeting Number</ion-label>
+          <ion-input type="string" [(ngModel)]="meetingNumber"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Meeting Password (if any)</ion-label>
+          <ion-input type="password" [(ngModel)]="meetingPassword"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" (click)="joinMeeting()">Join a Meeting</ion-button>
+      <ion-button expand="full" (click)="startMeeting()">Start a Meeting</ion-button>
+      <div padding>
+        <ion-button expand="full" fill="outline" (click)="startInstantMeeting()">Start an Instant Meeting</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!--<button ion-button full (click)="isLoggedIn()">Logged In?</button>-->
+</ion-content>
