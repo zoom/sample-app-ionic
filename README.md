@@ -41,9 +41,23 @@ Before you try out our SDK, you would need the following to get started:
     * Android 4.0 (API Level 14) or later.
   * iOS
     * iPhone or iPad
-* **npm@6.4+**
-* **ionic@3**
-* **ionic native@5.20+**
+    * **npm@6.7.0+**
+    * **ionic-cli@5.2.3+**
+    * **ionic/angular@4.1.0+**
+    * **ionic-native/core@5.8.0+**
+    * **ionic-native/zoom@5.8.0+**
+    
+    If you are developing on Android, you will need to install the latest version of cordova-android
+    ```
+    ionic cordova platform add android@8.0.0+
+    ```
+    
+    and install the following 2 plugins before you can use the Ionic SDK:
+    ```
+    ionic cordova plugin add cordova-plugin-androidx
+    ionic cordova plugin add cordova-plugin-androidx-adapter
+    ```
+    
 
 ### Installing
 
@@ -67,11 +81,14 @@ In your Ionic application directory:
 ```
 npm install
 npm install @ionic-native/zoom #(Optional) if not successfully installed automatically with package.json
-ionic cordova platform add android
+ionic cordova platform add android@8.0.0+
 ionic cordova platform add ios
 ```
 2. run the following to install the plugin:
 ```
+ionic cordova plugin add cordova-plugin-androidx
+ionic cordova plugin add cordova-plugin-androidx-adapter
+
 ionic cordova plugin add cordova.plugin.zoom
 ```
 3. Run the application:
@@ -90,6 +107,10 @@ In order to use the camera and microphone on iOS, please add the following in yo
     <string>Need microphone for video conferencing</string>
 </edit-config>
 ```
+
+## Simulator Support
+By default, this plugin only support running on real devices. If you would like to develop and test with Android or iOS simulators, please visit [https://github.com/zoom/zoom-sdk-ionic](https://github.com/zoom/zoom-sdk-ionic) for more details.
+
 
 ## Documentation
 
