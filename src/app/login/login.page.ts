@@ -8,6 +8,7 @@ import {Zoom} from '@ionic-native/zoom/ngx';
   styleUrls: ['login.page.scss']
 })
 export class LoginPage {
+  // [Warning] In production environment, please DO NOT hardcode your credentials. This is just for demo purpose.
   // Login variables
   userName = '';
   password = '';
@@ -19,8 +20,8 @@ export class LoginPage {
   displayName = 'Zoom Ionic';
 
   constructor(
-      private toastCtrl: ToastController,
-      private zoomService: Zoom,
+    private toastCtrl: ToastController,
+    private zoomService: Zoom,
   ) {
     // Check whether the user is logged in.
     this.zoomService.isLoggedIn().then((success) => {
@@ -95,7 +96,11 @@ export class LoginPage {
       no_share: true,
       no_audio: true,
       no_video: true,
-      no_meeting_error_message: true
+      no_meeting_error_message: true,
+      custom_meeting_id: "Customized Title",
+      meeting_views_options: 64,
+      no_unmute_confirm_dialog: true,
+      no_webinar_register_dialog: false
     };
     this.zoomService.joinMeeting(this.meetingNumber, this.meetingPassword, this.displayName, options)
         .then((success) => {
@@ -142,4 +147,5 @@ export class LoginPage {
       this.presentToast(error);
     });
   }
+
 }

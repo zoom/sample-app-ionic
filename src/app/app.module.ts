@@ -8,7 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {Zoom} from '@ionic-native/zoom/ngx';
+
+import { Zoom } from '@ionic-native/zoom/ngx';
 
 @NgModule({
   declarations: [AppComponent],

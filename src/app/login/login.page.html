@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-header color="primary">
       Login User can:
@@ -44,6 +44,9 @@
       Meeting
     </ion-card-header>
     <ion-card-content padding>
+      <div padding>
+        <ion-button expand="full" fill="outline" (click)="startInstantMeeting()">Start an Instant Meeting</ion-button>
+      </div>
       <ion-list>
         <ion-item>
           <ion-label position="stacked">Meeting Number</ion-label>
@@ -56,11 +59,6 @@
       </ion-list>
       <ion-button expand="full" (click)="joinMeeting()">Join a Meeting</ion-button>
       <ion-button expand="full" (click)="startMeeting()">Start a Meeting</ion-button>
-      <div padding>
-        <ion-button expand="full" fill="outline" (click)="startInstantMeeting()">Start an Instant Meeting</ion-button>
-      </div>
     </ion-card-content>
   </ion-card>
-
-  <!--<button ion-button full (click)="isLoggedIn()">Logged In?</button>-->
 </ion-content>
