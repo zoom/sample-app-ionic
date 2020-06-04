@@ -64,9 +64,9 @@ Before you try out our SDK, you would need the following to get started:
       * **ionic-native/core@5.25.0+**
       * **ionic-native/zoom@5.25.0+**
 
-    If you are developing on Android, you will need to install the latest version of cordova-android
+    If you are developing on Android, you will need to install the latest version of cordova-android(Since the current released version of cordova-android does not support Android SDK API Level 29, please install the latest version from their Github repo, which supports Android SDK API Level 29)
     ```
-    ionic cordova platform add android@8.0.0+
+    ionic cordova platform add https://github.com/apache/cordova-android.git
     ```
 
     and install the following 2 plugins before you can use the Ionic SDK:
@@ -98,7 +98,7 @@ In your Ionic application directory:
 ```
 npm install
 npm install @ionic-native/zoom #(Optional) if not successfully installed automatically with package.json
-ionic cordova platform add android@8.0.0+
+ionic cordova platform add https://github.com/apache/cordova-android.git
 ionic cordova platform add ios
 ```
 2. run the following to install the plugin:
