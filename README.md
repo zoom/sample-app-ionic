@@ -1,5 +1,7 @@
 # Zoom Ionic SDK sample app
 
+Use of this sample app is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html)
+
 **Note: This is a community project initiated by Zoom. Zoom does not actively enhance the interfaces in the Ionic plugin. If you would like to contribute, please contact us. Thanks! :)**
 
 <div align="center">
