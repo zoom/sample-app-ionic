@@ -3,7 +3,7 @@
 **Note: This is a community project initiated by Zoom. Zoom does not actively enhance the interfaces in the Ionic plugin. If you would like to contribute, please contact us. Thanks! :)**
 
 <div align="center">
-<img src="https://s3.amazonaws.com/user-content.stoplight.io/8987/1541013063688" width="400px" max-height="400px" style="margin:auto;"/>
+<img src="https://camo.githubusercontent.com/f819328f236e10c1a0bb7a157f34c2e141150285adbd38757ffc3af4ec824158/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f757365722d636f6e74656e742e73746f706c696768742e696f2f383938372f31353431303133303633363838" width="400px" max-height="400px" style="margin:auto;"/>
 </div>
 
 ## :rotating_light: Announcement :rotating_light:
@@ -18,10 +18,10 @@ To align with Zoom’s [recent announcement](https://blog.zoom.us/wordpress/2020
 You can find the full Zoom Ionic SDK documentation and the community support forum here:
 <div align="center">
    <a target="_blank" href="https://marketplace.zoom.us/docs/sdk/hybrid-frameworks/ionic" style="text-decoration:none">
-   <img src="https://s3-us-west-1.amazonaws.com/sdk.zoom.us/Doc-button.png" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
+   <img src="https://camo.githubusercontent.com/56cdfebcb6fd07b4f263a414bcdc075fa7cd6c6905057811bd0ca3235414b263/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f73646b2e7a6f6f6d2e75732f446f632d627574746f6e2e706e67" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
    </a>
    <a target="_blank" href="https://devforum.zoom.us/c/mobile-sdk" style="text-decoration:none">
-   <img src="https://s3-us-west-1.amazonaws.com/sdk.zoom.us/Forum-button.png" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
+   <img src="https://camo.githubusercontent.com/d785750e179aaf681e09e1b8dc8c26e86115255bce201fc8871e82a7eb4c7e5a/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f73646b2e7a6f6f6d2e75732f466f72756d2d627574746f6e2e706e67" width="350px" max-height="350px" style="margin:1vh 1vw;"/>
    </a>
 </div>
 
